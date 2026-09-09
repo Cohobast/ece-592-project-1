@@ -27,8 +27,6 @@ For example:
 
 taskset -c 4 ./cache_bench <arguments>
 
-For the Sunbird experiments, CPU 4 was used.
-
 
 ## 3. Run a coarse capacity sweep
 
