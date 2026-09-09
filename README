@@ -25,7 +25,7 @@ The benchmark should be pinned to one CPU while measurements are running.
 
 For example:
 
-taskset -c 4 ./cache_bench <arguments>
+taskset -c "cpu #" ./cache_bench <arguments>
 
 
 ## 3. Run a coarse capacity sweep
@@ -34,7 +34,7 @@ Start with a large range of power-of-two working-set sizes.
 
 For Sunbird, we tested from 4 KiB through 64 MiB:
 
-taskset -c 4 ./cache_bench sweep 4096 67108864 1000000 64 random 12345 capacity_coarse
+taskset -c "cpu #" ./cache_bench sweep 4096 67108864 1000000 64 random 12345 capacity_coarse
 
 The important parameters are:
 
