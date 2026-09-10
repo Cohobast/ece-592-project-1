@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 MACHINE_NAME = "Crux"
+CACHE_LEVEL = "l1"
+
 FILE_NAME = "crux_assoc_assoc_summary.csv"
 
 df = pd.read_csv(FILE_NAME)
@@ -32,13 +34,13 @@ plt.title(
 plt.tight_layout()
 
 plt.savefig(
-    MACHINE_NAME.lower() + "_assoc.png",
+    MACHINE_NAME.lower()+"_"+CACHE_LEVEL.lower()+"_assoc.png",
     dpi=300,
     bbox_inches="tight"
 )
 
 plt.savefig(
-    MACHINE_NAME.lower() + "_assoc.pdf",
+    MACHINE_NAME.lower()+"_"+CACHE_LEVEL.lower()+"_assoc.pdf",
     bbox_inches="tight"
 )
 

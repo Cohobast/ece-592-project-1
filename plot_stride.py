@@ -22,9 +22,10 @@ from matplotlib.ticker import FuncFormatter
 # ============================================================
 
 COARSE_FILE = "line_size_stride_summary.csv"
-DENSE_GLOB = "line_dense_*_stride_summary.csv"
+DENSE_GLOB = "line_dense_knee1_stride_summary.csv"
 
 MACHINE_NAME = "Crux"
+CACHE_LEVEL = "L1"
 
 
 # ============================================================
@@ -280,7 +281,7 @@ plt.tight_layout()
 # ============================================================
 
 plt.savefig(
-    f"{MACHINE_NAME.lower()}_stride_line_size.png",
+    MACHINE_NAME.lower()+"_"+CACHE_LEVEL.lower()+"_stride_line_size.png",
     dpi=300,
     bbox_inches="tight"
 )
@@ -291,7 +292,7 @@ plt.savefig(
 # ============================================================
 
 plt.savefig(
-    f"{MACHINE_NAME.lower()}_stride_line_size.pdf",
+    MACHINE_NAME.lower()+"_"+CACHE_LEVEL.lower()+"_stride_line_size.pdf",
     bbox_inches="tight"
 )
 
