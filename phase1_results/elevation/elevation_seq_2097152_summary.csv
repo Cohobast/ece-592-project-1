@@ -1,0 +1,2 @@
+mode,requested_bytes,actual_bytes,nodes,timed_samples,dependent_accesses_per_sample,total_dependent_accesses,mean_tsc_ticks_per_access,median_tsc_ticks_per_access,stddev,q1,q3,p5,p95,min,max,outliers,seed,raw_file
+sequential,2097152,2097152,262144,1000000,64,64000000,3.384226547,3.359375000,1.848868553,3.328125000,3.359375000,3.328125000,3.390625000,3.265625000,991.593750000,25384,12345,elevation_seq_2097152_2097152_sequential_raw.csv

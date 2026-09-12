@@ -1,0 +1,2 @@
+mode,requested_bytes,actual_bytes,nodes,timed_samples,dependent_accesses_per_sample,total_dependent_accesses,mean_tsc_ticks_per_access,median_tsc_ticks_per_access,stddev,q1,q3,p5,p95,min,max,outliers,seed,raw_file
+random,122880,122880,15360,1000000,64,64000000,13.040667578,13.046875000,2.027568553,12.531250000,13.484375000,11.843750000,14.062500000,10.218750000,1210.437500000,7410,12345,elevation_dense_122880_122880_random_raw.csv
