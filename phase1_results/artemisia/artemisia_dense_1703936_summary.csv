@@ -1,0 +1,2 @@
+mode,requested_bytes,actual_bytes,nodes,timed_samples,dependent_accesses_per_sample,total_dependent_accesses,mean_tsc_ticks_per_access,median_tsc_ticks_per_access,stddev,q1,q3,p5,p95,min,max,outliers,seed,raw_file
+random,1703936,1703936,212992,1000000,64,64000000,26.099825281,25.750000000,4.691078547,24.593750000,27.031250000,23.218750000,29.812500000,20.875000000,2259.718750000,30786,12345,artemisia_dense_1703936_1703936_random_raw.csv
