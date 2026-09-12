@@ -1,0 +1,2 @@
+stride_bytes,requested_footprint_bytes,actual_footprint_bytes,nodes,timed_samples,dependent_accesses_per_sample,total_dependent_accesses,mean_tsc_ticks_per_access,median_tsc_ticks_per_access,stddev,q1,q3,p5,p95,min,max,outliers,seed,raw_file
+24,61440,61440,2560,1000000,128,128000000,9.469491375,9.375000000,1.211512299,9.187500000,9.562500000,8.625000000,10.312500000,7.312500000,514.125000000,69506,12345,skylark_line_dense1_s24_f61440_stride24_footprint61440_raw.csv

@@ -1,0 +1,2 @@
+mode,requested_bytes,actual_bytes,nodes,timed_samples,dependent_accesses_per_sample,total_dependent_accesses,mean_tsc_ticks_per_access,median_tsc_ticks_per_access,stddev,q1,q3,p5,p95,min,max,outliers,seed,raw_file
+sequential,65536,65536,8192,1000000,64,64000000,5.632132500,5.625000000,0.954197703,5.625000000,5.625000000,5.250000000,5.625000000,4.500000000,149.250000000,82122,12345,skylark_seq_65536_65536_sequential_raw.csv
