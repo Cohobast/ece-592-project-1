@@ -1,0 +1,2 @@
+mode,requested_bytes,actual_bytes,nodes,timed_samples,dependent_accesses_per_sample,total_dependent_accesses,mean_tsc_ticks_per_access,median_tsc_ticks_per_access,stddev,q1,q3,p5,p95,min,max,outliers,seed,raw_file
+random,16777216,16777216,2097152,1000000,64,64000000,162.796189203,160.609375000,35.507404683,150.484375000,171.468750000,137.703125000,187.671875000,99.046875000,1425.187500000,9879,12345,capacity_coarse_16777216_16777216_random_raw.csv

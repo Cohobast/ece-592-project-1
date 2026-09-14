@@ -1,0 +1,2 @@
+mode,requested_bytes,actual_bytes,nodes,timed_samples,dependent_accesses_per_sample,total_dependent_accesses,mean_tsc_ticks_per_access,median_tsc_ticks_per_access,stddev,q1,q3,p5,p95,min,max,outliers,seed,raw_file
+sequential,32768,32768,4096,1000000,64,64000000,7.425060156,7.265625000,9.426553543,7.125000000,7.406250000,7.000000000,7.687500000,6.640625000,1080.937500000,18001,12345,prefetch_32k_32768_sequential_raw.csv
