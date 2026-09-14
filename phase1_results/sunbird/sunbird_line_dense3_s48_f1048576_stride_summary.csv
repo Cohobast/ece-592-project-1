@@ -1,0 +1,2 @@
+stride_bytes,requested_footprint_bytes,actual_footprint_bytes,nodes,timed_samples,dependent_accesses_per_sample,total_dependent_accesses,mean_tsc_ticks_per_access,median_tsc_ticks_per_access,stddev,q1,q3,p5,p95,min,max,outliers,seed,raw_file
+48,1048576,1048560,21845,1000000,128,128000000,52.176353562,51.937500000,27.577450598,51.218750000,52.687500000,50.218750000,53.812500000,48.125000000,23795.500000000,7766,12345,sunbird_line_dense3_s48_f1048576_stride48_footprint1048560_raw.csv

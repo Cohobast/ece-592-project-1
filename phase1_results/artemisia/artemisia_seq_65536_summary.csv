@@ -1,0 +1,2 @@
+mode,requested_bytes,actual_bytes,nodes,timed_samples,dependent_accesses_per_sample,total_dependent_accesses,mean_tsc_ticks_per_access,median_tsc_ticks_per_access,stddev,q1,q3,p5,p95,min,max,outliers,seed,raw_file
+sequential,65536,65536,8192,1000000,64,64000000,8.914356813,7.468750000,2.965124490,7.406250000,10.906250000,7.375000000,12.343750000,6.718750000,442.312500000,912,12345,artemisia_seq_65536_65536_sequential_raw.csv

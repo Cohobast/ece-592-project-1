@@ -1,0 +1,2 @@
+stride_bytes,requested_footprint_bytes,actual_footprint_bytes,nodes,timed_samples,dependent_accesses_per_sample,total_dependent_accesses,mean_tsc_ticks_per_access,median_tsc_ticks_per_access,stddev,q1,q3,p5,p95,min,max,outliers,seed,raw_file
+128,65536,65536,512,1000000,128,128000000,16.547209234,16.500000000,2.015384542,16.421875000,16.531250000,16.312500000,16.578125000,15.453125000,1224.906250000,21022,12345,artemisia_line_dense1_s128_f65536_stride128_footprint65536_raw.csv

@@ -1,0 +1,2 @@
+stride_bytes,requested_footprint_bytes,actual_footprint_bytes,nodes,timed_samples,dependent_accesses_per_sample,total_dependent_accesses,mean_tsc_ticks_per_access,median_tsc_ticks_per_access,stddev,q1,q3,p5,p95,min,max,outliers,seed,raw_file
+32,2097152,2097152,65536,1000000,128,128000000,25.617442141,25.421875000,2.721005363,24.789062500,26.132812500,23.960937500,27.296875000,21.609375000,645.343750000,14043,12345,elevation_line_dense3_s32_f2097152_stride32_footprint2097152_raw.csv

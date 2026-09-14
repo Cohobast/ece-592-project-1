@@ -1,0 +1,2 @@
+mode,requested_bytes,actual_bytes,nodes,timed_samples,dependent_accesses_per_sample,total_dependent_accesses,mean_tsc_ticks_per_access,median_tsc_ticks_per_access,stddev,q1,q3,p5,p95,min,max,outliers,seed,raw_file
+random,1703936,1703936,212992,1000000,64,64000000,28.070886750,28.125000000,2.714875153,27.375000000,28.875000000,25.875000000,30.000000000,22.875000000,372.000000000,13743,12345,skylark_dense_1703936_1703936_random_raw.csv
