@@ -1,0 +1,780 @@
+  cache-misses                                       [Hardware event]
+  cache-references                                   [Hardware event]
+  L1-dcache-loads OR cpu/L1-dcache-loads/
+  L1-dcache-load-misses OR cpu/L1-dcache-load-misses/
+  L1-dcache-stores OR cpu/L1-dcache-stores/
+  L1-icache-load-misses OR cpu/L1-icache-load-misses/
+  LLC-loads OR cpu/LLC-loads/
+  LLC-load-misses OR cpu/LLC-load-misses/
+  LLC-stores OR cpu/LLC-stores/
+  LLC-store-misses OR cpu/LLC-store-misses/
+  dTLB-loads OR cpu/dTLB-loads/
+  dTLB-load-misses OR cpu/dTLB-load-misses/
+  dTLB-stores OR cpu/dTLB-stores/
+  dTLB-store-misses OR cpu/dTLB-store-misses/
+  iTLB-loads OR cpu/iTLB-loads/
+  iTLB-load-misses OR cpu/iTLB-load-misses/
+  cache-misses OR cpu/cache-misses/                  [Kernel PMU event]
+  cache-references OR cpu/cache-references/          [Kernel PMU event]
+cache:
+  l1d.replacement
+       [L1D data line replacements. Unit: cpu]
+  l1d_pend_miss.fb_full
+  l1d_pend_miss.pending
+       [L1D miss outstanding duration in cycles. Unit: cpu]
+  l1d_pend_miss.pending_cycles
+       [Cycles with L1D load Misses outstanding. Unit: cpu]
+  l1d_pend_miss.pending_cycles_any
+       [Cycles with L1D load Misses outstanding from any thread on physical
+  l1d_pend_miss.request_fb_full
+        for blocking the request. A request includes cacheable/uncacheable
+  l2_demand_rqsts.wb_hit
+       [Not rejected writebacks that hit L2 cache. Unit: cpu]
+  l2_lines_in.all
+       [L2 cache lines filling L2. Unit: cpu]
+  l2_lines_in.e
+       [L2 cache lines in E state filling L2. Unit: cpu]
+  l2_lines_in.i
+       [L2 cache lines in I state filling L2. Unit: cpu]
+  l2_lines_in.s
+       [L2 cache lines in S state filling L2. Unit: cpu]
+  l2_lines_out.demand_clean
+       [Clean L2 cache lines evicted by demand. Unit: cpu]
+  l2_lines_out.demand_dirty
+       [Dirty L2 cache lines evicted by demand. Unit: cpu]
+  l2_rqsts.all_code_rd
+       [L2 code requests. Unit: cpu]
+  l2_rqsts.all_demand_data_rd
+  l2_rqsts.all_demand_miss
+       [Demand requests that miss L2 cache Spec update: HSD78,HSM80. Unit: cpu]
+  l2_rqsts.all_demand_references
+       [Demand requests to L2 cache Spec update: HSD78,HSM80. Unit: cpu]
+  l2_rqsts.all_pf
+       [Requests from L2 hardware prefetchers. Unit: cpu]
+  l2_rqsts.all_rfo
+       [RFO requests to L2 cache. Unit: cpu]
+  l2_rqsts.code_rd_hit
+       [L2 cache hits when fetching instructions,code reads. Unit: cpu]
+  l2_rqsts.code_rd_miss
+       [L2 cache misses when fetching instructions. Unit: cpu]
+  l2_rqsts.demand_data_rd_hit
+       [Demand Data Read requests that hit L2 cache Spec update: HSD78,HSM80.
+  l2_rqsts.demand_data_rd_miss
+       [Demand Data Read miss L2,no rejects Spec update: HSD78,HSM80. Unit:
+  l2_rqsts.l2_pf_hit
+       [L2 prefetch requests that hit L2 cache. Unit: cpu]
+  l2_rqsts.l2_pf_miss
+       [L2 prefetch requests that miss L2 cache. Unit: cpu]
+  l2_rqsts.miss
+       [All requests that miss L2 cache Spec update: HSD78,HSM80. Unit: cpu]
+  l2_rqsts.references
+       [All L2 requests Spec update: HSD78,HSM80. Unit: cpu]
+  l2_rqsts.rfo_hit
+       [RFO requests that hit L2 cache. Unit: cpu]
+  l2_rqsts.rfo_miss
+       [RFO requests that miss L2 cache. Unit: cpu]
+  l2_trans.all_pf
+       [L2 or L3 HW prefetches that access L2 cache. Unit: cpu]
+  l2_trans.all_requests
+       [Transactions accessing L2 pipe. Unit: cpu]
+  l2_trans.code_rd
+       [L2 cache accesses when fetching instructions. Unit: cpu]
+  l2_trans.demand_data_rd
+       [Demand Data Read requests that access L2 cache. Unit: cpu]
+  l2_trans.l1d_wb
+       [L1D writebacks that access L2 cache. Unit: cpu]
+  l2_trans.l2_fill
+       [L2 fill requests that access L2 cache. Unit: cpu]
+  l2_trans.l2_wb
+       [L2 writebacks that access L2 cache. Unit: cpu]
+  l2_trans.rfo
+       [RFO requests that access L2 cache. Unit: cpu]
+  lock_cycles.cache_lock_duration
+       [Cycles when L1D is locked. Unit: cpu]
+  longest_lat_cache.miss
+       [Core-originated cacheable demand requests missed L3. Unit: cpu]
+  longest_lat_cache.reference
+       [Core-originated cacheable demand requests that refer to L3. Unit: cpu]
+  mem_load_uops_l3_hit_retired.xsnp_hit
+       [Retired load uops which data sources were L3 and cross-core snoop hits
+        in on-pkg core cache Supports address when precise. Spec update: HSD29,
+  mem_load_uops_l3_hit_retired.xsnp_hitm
+        L3 Supports address when precise. Spec update: HSD29,HSD25,HSM26,HSM30
+  mem_load_uops_l3_hit_retired.xsnp_miss
+       [Retired load uops which data sources were L3 hit and cross-core snoop
+        missed in on-pkg core cache Supports address when precise. Spec
+  mem_load_uops_l3_hit_retired.xsnp_none
+       [Retired load uops which data sources were hits in L3 without snoops
+  mem_load_uops_l3_miss_retired.local_dram
+  mem_load_uops_l3_miss_retired.remote_dram
+  mem_load_uops_l3_miss_retired.remote_fwd
+       [Retired load uop whose Data Source was: forwarded from remote cache
+  mem_load_uops_l3_miss_retired.remote_hitm
+       [Retired load uop whose Data Source was: Remote cache HITM Supports
+       [Retired load uops which data sources were load uops missed L1 but hit
+        FB due to preceding miss to the same cache line with data not ready
+  mem_load_uops_retired.l1_hit
+       [Retired load uops with L1 cache hits as data sources Supports address
+  mem_load_uops_retired.l1_miss
+       [Retired load uops misses in L1 cache as data sources Supports address
+  mem_load_uops_retired.l2_hit
+       [Retired load uops with L2 cache hits as data sources Supports address
+  mem_load_uops_retired.l2_miss
+       [Miss in mid-level (L2) cache. Excludes Unknown data-source Supports
+  mem_load_uops_retired.l3_hit
+       [Retired load uops which data sources were data hits in L3 without
+  mem_load_uops_retired.l3_miss
+       [Miss in last-level (L3) cache. Excludes Unknown data-source Supports
+       [Retired load uops that split across a cacheline boundary Supports
+       [Retired store uops that split across a cacheline boundary Supports
+  mem_uops_retired.stlb_miss_loads
+       [Retired load uops that miss the STLB Supports address when precise.
+  mem_uops_retired.stlb_miss_stores
+       [Retired store uops that miss the STLB Supports address when precise.
+       [Cacheable and noncacheable code read requests. Unit: cpu]
+       [Offcore outstanding cacheable Core Data Read transactions in
+       [Cycles when offcore outstanding cacheable Core Data Read transactions
+  offcore_response.all_code_rd.llc_hit.hit_other_core_no_fwd
+       [Counts all demand & prefetch code reads hit in the L3 and the snoops
+  offcore_response.all_data_rd.llc_hit.hit_other_core_no_fwd
+       [Counts all demand & prefetch data reads hit in the L3 and the snoops
+  offcore_response.all_data_rd.llc_hit.hitm_other_core
+       [Counts all demand & prefetch data reads hit in the L3 and the snoop to
+  offcore_response.all_reads.llc_hit.hit_other_core_no_fwd
+       [Counts all data/code/rfo reads (demand & prefetch) hit in the L3 and
+  offcore_response.all_reads.llc_hit.hitm_other_core
+       [Counts all data/code/rfo reads (demand & prefetch) hit in the L3 and
+  offcore_response.all_requests.llc_hit.any_response
+       [Counts all requests hit in the L3. Unit: cpu]
+  offcore_response.all_rfo.llc_hit.hit_other_core_no_fwd
+       [Counts all demand & prefetch RFOs hit in the L3 and the snoops to
+  offcore_response.all_rfo.llc_hit.hitm_other_core
+       [Counts all demand & prefetch RFOs hit in the L3 and the snoop to one
+  offcore_response.demand_code_rd.llc_hit.hit_other_core_no_fwd
+       [Counts all demand code reads hit in the L3 and the snoops to sibling
+  offcore_response.demand_code_rd.llc_hit.hitm_other_core
+       [Counts all demand code reads hit in the L3 and the snoop to one of the
+  offcore_response.demand_data_rd.llc_hit.hit_other_core_no_fwd
+       [Counts demand data reads hit in the L3 and the snoops to sibling cores
+  offcore_response.demand_data_rd.llc_hit.hitm_other_core
+       [Counts demand data reads hit in the L3 and the snoop to one of the
+  offcore_response.demand_rfo.llc_hit.hit_other_core_no_fwd
+       [Counts all demand data writes (RFOs) hit in the L3 and the snoops to
+  offcore_response.demand_rfo.llc_hit.hitm_other_core
+       [Counts all demand data writes (RFOs) hit in the L3 and the snoop to
+  offcore_response.pf_l2_code_rd.llc_hit.any_response
+       [Counts all prefetch (that bring data to LLC only) code reads hit in
+        the L3. Unit: cpu]
+  offcore_response.pf_l2_data_rd.llc_hit.any_response
+       [Counts prefetch (that bring data to L2) data reads hit in the L3.
+  offcore_response.pf_l2_rfo.llc_hit.any_response
+       [Counts all prefetch (that bring data to L2) RFOs hit in the L3. Unit:
+  offcore_response.pf_llc_code_rd.llc_hit.any_response
+       [Counts prefetch (that bring data to LLC only) code reads hit in the
+        L3. Unit: cpu]
+  offcore_response.pf_llc_data_rd.llc_hit.any_response
+       [Counts all prefetch (that bring data to LLC only) data reads hit in
+        the L3. Unit: cpu]
+  offcore_response.pf_llc_rfo.llc_hit.any_response
+       [Counts all prefetch (that bring data to LLC only) RFOs hit in the L3.
+  icache.hit
+       [Number of Instruction Cache,Streaming Buffer and Victim Cache Reads.
+        both cacheable and noncacheable,including UC fetches. Unit: cpu]
+  icache.ifdata_stall
+       [Cycles where a code fetch is stalled due to L1 instruction-cache miss.
+  icache.ifetch_stall
+       [Cycles where a code fetch is stalled due to L1 instruction-cache miss.
+  icache.misses
+       [Number of Instruction Cache,Streaming Buffer and Victim Cache Misses.
+        Includes Uncacheable accesses. Unit: cpu]
+       [Speculative cache line split load uops dispatched to L1 cache. Unit:
+       [Speculative cache line split STA uops dispatched to L1 cache. Unit:
+  offcore_response.all_code_rd.llc_miss.any_response
+       [Counts all demand & prefetch code reads miss in the L3. Unit: cpu]
+  offcore_response.all_code_rd.llc_miss.local_dram
+       [Counts all demand & prefetch code reads miss the L3 and the data is
+  offcore_response.all_data_rd.llc_miss.any_response
+       [Counts all demand & prefetch data reads miss in the L3. Unit: cpu]
+  offcore_response.all_data_rd.llc_miss.local_dram
+       [Counts all demand & prefetch data reads miss the L3 and the data is
+  offcore_response.all_data_rd.llc_miss.remote_dram
+       [Counts all demand & prefetch data reads miss the L3 and the data is
+  offcore_response.all_data_rd.llc_miss.remote_hit_forward
+       [Counts all demand & prefetch data reads miss the L3 and clean or
+        shared data is transferred from remote cache. Unit: cpu]
+  offcore_response.all_data_rd.llc_miss.remote_hitm
+       [Counts all demand & prefetch data reads miss the L3 and the modified
+        data is transferred from remote cache. Unit: cpu]
+  offcore_response.all_reads.llc_miss.any_response
+       [Counts all data/code/rfo reads (demand & prefetch) miss in the L3.
+  offcore_response.all_reads.llc_miss.local_dram
+       [Counts all data/code/rfo reads (demand & prefetch) miss the L3 and the
+  offcore_response.all_reads.llc_miss.remote_dram
+       [Counts all data/code/rfo reads (demand & prefetch) miss the L3 and the
+  offcore_response.all_reads.llc_miss.remote_hit_forward
+       [Counts all data/code/rfo reads (demand & prefetch) miss the L3 and
+        clean or shared data is transferred from remote cache. Unit: cpu]
+  offcore_response.all_reads.llc_miss.remote_hitm
+       [Counts all data/code/rfo reads (demand & prefetch) miss the L3 and the
+        modified data is transferred from remote cache. Unit: cpu]
+  offcore_response.all_requests.llc_miss.any_response
+       [Counts all requests miss in the L3. Unit: cpu]
+  offcore_response.all_rfo.llc_miss.any_response
+       [Counts all demand & prefetch RFOs miss in the L3. Unit: cpu]
+  offcore_response.all_rfo.llc_miss.local_dram
+       [Counts all demand & prefetch RFOs miss the L3 and the data is returned
+  offcore_response.demand_code_rd.llc_miss.any_response
+       [Counts all demand code reads miss in the L3. Unit: cpu]
+  offcore_response.demand_code_rd.llc_miss.local_dram
+       [Counts all demand code reads miss the L3 and the data is returned from
+  offcore_response.demand_data_rd.llc_miss.any_response
+       [Counts demand data reads miss in the L3. Unit: cpu]
+  offcore_response.demand_data_rd.llc_miss.local_dram
+       [Counts demand data reads miss the L3 and the data is returned from
+  offcore_response.demand_rfo.llc_miss.any_response
+       [Counts all demand data writes (RFOs) miss in the L3. Unit: cpu]
+  offcore_response.demand_rfo.llc_miss.local_dram
+       [Counts all demand data writes (RFOs) miss the L3 and the data is
+  offcore_response.demand_rfo.llc_miss.remote_hitm
+       [Counts all demand data writes (RFOs) miss the L3 and the modified data
+        is transferred from remote cache. Unit: cpu]
+  offcore_response.pf_l2_code_rd.llc_miss.any_response
+       [Counts all prefetch (that bring data to LLC only) code reads miss in
+        the L3. Unit: cpu]
+  offcore_response.pf_l2_data_rd.llc_miss.any_response
+       [Counts prefetch (that bring data to L2) data reads miss in the L3.
+  offcore_response.pf_l2_rfo.llc_miss.any_response
+       [Counts all prefetch (that bring data to L2) RFOs miss in the L3. Unit:
+  offcore_response.pf_llc_code_rd.llc_miss.any_response
+       [Counts prefetch (that bring data to LLC only) code reads miss in the
+        L3. Unit: cpu]
+  offcore_response.pf_llc_data_rd.llc_miss.any_response
+       [Counts all prefetch (that bring data to LLC only) data reads miss in
+        the L3. Unit: cpu]
+  offcore_response.pf_llc_rfo.llc_miss.any_response
+       [Counts all prefetch (that bring data to LLC only) RFOs miss in the L3.
+       [Cycles when L1 and L2 are locked due to UC or split lock. Unit: cpu]
+  cycle_activity.cycles_l1d_pending
+       [Cycles with pending L1 cache miss loads. Unit: cpu]
+  cycle_activity.cycles_l2_pending
+       [Cycles with pending L2 cache miss loads Spec update: HSD78,HSM63,
+  cycle_activity.stalls_l1d_pending
+       [Execution stalls due to L1 data cache misses. Unit: cpu]
+  cycle_activity.stalls_l2_pending
+       [Execution stalls due to L2 cache misses Spec update: HSM63,HSM80.
+uncore cache:
+  llc_misses.code_llc_prefetch
+       [LLC prefetch misses for code reads. Derived from
+  llc_misses.data_llc_prefetch
+       [LLC prefetch misses for data reads. Derived from
+  llc_misses.data_read
+       [LLC misses - demand and prefetch data reads - excludes LLC prefetches.
+  llc_misses.mmio_read
+  llc_misses.mmio_write
+  llc_misses.pcie_non_snoop_write
+       [PCIe write misses (full cache line). Derived from
+  llc_misses.pcie_read
+       [LLC misses for PCIe read current. Derived from
+  llc_misses.pcie_write
+  llc_misses.rfo_llc_prefetch
+       [LLC prefetch misses for RFO. Derived from
+  llc_misses.uncacheable
+       [LLC misses - Uncacheable reads (from cpu) . Derived from
+  llc_references.code_llc_prefetch
+       [L2 demand and L2 prefetch code references to LLC. Derived from
+  llc_references.pcie_ns_partial_write
+       [PCIe writes (partial cache line). Derived from
+  llc_references.pcie_read
+  llc_references.pcie_write
+       [PCIe write references (full cache line). Derived from
+  llc_references.streaming_full
+       [Streaming stores (full cache line). Derived from
+  llc_references.streaming_partial
+       [Streaming stores (partial cache line). Derived from
+  unc_c_llc_lookup.any
+       [All LLC Misses (code+ data rd + data wr - including demand and
+  unc_c_llc_lookup.data_read
+       [Cache Lookups; Data Read Request. Unit: uncore_cbox]
+  unc_c_llc_lookup.nid
+       [Cache Lookups; Lookups that Match NID. Unit: uncore_cbox]
+  unc_c_llc_lookup.read
+       [Cache Lookups; Any Read Request. Unit: uncore_cbox]
+  unc_c_llc_lookup.remote_snoop
+       [Cache Lookups; External Snoop Request. Unit: uncore_cbox]
+  unc_c_llc_lookup.write
+       [Cache Lookups; Write Requests. Unit: uncore_cbox]
+  unc_c_llc_victims.e_state
+  unc_c_llc_victims.f_state
+  unc_c_llc_victims.i_state
+  unc_c_llc_victims.m_state
+       [M line evictions from LLC (writebacks to memory). Unit: uncore_cbox]
+  unc_c_llc_victims.miss
+  unc_c_llc_victims.nid
+  unc_c_llc_victims.s_state
+       [Number of LLC responses that bounced on the Ring.; AD. Unit:
+       [Number of LLC responses that bounced on the Ring.; AK. Unit:
+       [Number of LLC responses that bounced on the Ring.; BL. Unit:
+       [Number of LLC responses that bounced on the Ring.; Snoops of
+        processor's cache. Unit: uncore_cbox]
+  unc_c_tor_occupancy.llc_data_read
+       [Occupancy counter for LLC data reads (demand and L2 prefetch). Derived
+  unc_c_txr_inserts.ad_cache
+       [Egress Allocations; AD - Cachebo. Unit: uncore_cbox]
+  unc_c_txr_inserts.ak_cache
+       [Egress Allocations; AK - Cachebo. Unit: uncore_cbox]
+  unc_c_txr_inserts.bl_cache
+       [Egress Allocations; BL - Cacheno. Unit: uncore_cbox]
+  unc_c_txr_inserts.iv_cache
+       [Egress Allocations; IV - Cachebo. Unit: uncore_cbox]
+       [Counts Number of Hits in HitMe Cache; op is AckCnfltWbI. Unit:
+       [Counts Number of Hits in HitMe Cache; All Requests. Unit: uncore_ha]
+       [Counts Number of Hits in HitMe Cache; Allocations. Unit: uncore_ha]
+       [Counts Number of Hits in HitMe Cache; Allocations. Unit: uncore_ha]
+       [Counts Number of Hits in HitMe Cache; HOM Requests. Unit: uncore_ha]
+       [Counts Number of Hits in HitMe Cache; Invalidations. Unit: uncore_ha]
+       [Counts Number of Hits in HitMe Cache; op is RdCode,RdData,
+       [Counts Number of Hits in HitMe Cache; op is RspI,RspIWb,RspS,RspSWb,
+       [Counts Number of Hits in HitMe Cache; op is RspIFwd or RspIFwdWb for a
+       [Counts Number of Hits in HitMe Cache; op is RspIFwd or RspIFwdWb for a
+       [Counts Number of Hits in HitMe Cache; op is RsSFwd or RspSFwdWb. Unit:
+       [Counts Number of Hits in HitMe Cache; op is WbMtoE or WbMtoS. Unit:
+       [Counts Number of Hits in HitMe Cache; op is WbMtoI. Unit: uncore_ha]
+       [Accumulates Number of PV bits set on HitMe Cache Hits; op is
+       [Accumulates Number of PV bits set on HitMe Cache Hits; All Requests.
+       [Accumulates Number of PV bits set on HitMe Cache Hits; HOM Requests.
+       [Accumulates Number of PV bits set on HitMe Cache Hits; op is RdCode,
+       [Accumulates Number of PV bits set on HitMe Cache Hits; op is RspI,
+       [Accumulates Number of PV bits set on HitMe Cache Hits; op is RspIFwd
+       [Accumulates Number of PV bits set on HitMe Cache Hits; op is RspIFwd
+       [Accumulates Number of PV bits set on HitMe Cache Hits; op is RsSFwd or
+       [Accumulates Number of PV bits set on HitMe Cache Hits; op is WbMtoE or
+       [Accumulates Number of PV bits set on HitMe Cache Hits; op is WbMtoI.
+       [Counts Number of times HitMe Cache is accessed; op is AckCnfltWbI.
+       [Counts Number of times HitMe Cache is accessed; All Requests. Unit:
+       [Counts Number of times HitMe Cache is accessed; Allocations. Unit:
+       [Counts Number of times HitMe Cache is accessed; HOM Requests. Unit:
+       [Counts Number of times HitMe Cache is accessed; Invalidations. Unit:
+       [Counts Number of times HitMe Cache is accessed; op is RdCode,RdData,
+       [Counts Number of times HitMe Cache is accessed; op is RspI,RspIWb,RspS,
+       [Counts Number of times HitMe Cache is accessed; op is RspIFwd or
+       [Counts Number of times HitMe Cache is accessed; op is RspIFwd or
+       [Counts Number of times HitMe Cache is accessed; op is RsSFwd or
+       [Counts Number of times HitMe Cache is accessed; op is WbMtoE or
+       [Counts Number of times HitMe Cache is accessed; op is WbMtoI. Unit:
+       [M line forwarded from remote cache along with writeback to memory.
+       [M line forwarded from remote cache with no writeback to memory. Unit:
+       [Shared line response from remote cache. Unit: uncore_ha]
+       [Shared line forwarded from remote cache. Unit: uncore_ha]
+  unc_h_txr_bl.drs_cache
+       [Outbound DRS Ring Transactions to Cache; Data to Cache. Unit:
+       [Outbound DRS Ring Transactions to Cache; Data to Core. Unit: uncore_ha]
+       [Outbound DRS Ring Transactions to Cache; Data to QPI. Unit: uncore_ha]
+  unc_q_l1_power_cycles
+       [Cycles in L1. Unit: uncore_qpi]
+  unc_s_ring_bounces.ad_cache
+       [Number of LLC responses that bounced on the Ring. Unit: uncore_sbox]
+       [Number of LLC responses that bounced on the Ring.; Acknowledgements to
+       [Number of LLC responses that bounced on the Ring.; Data Responses to
+       [Number of LLC responses that bounced on the Ring.; Snoops of
+        processor's cache. Unit: uncore_sbox]
+  unc_s_ring_sink_starved.ad_cache
+       [UNC_S_RING_SINK_STARVED.AD_CACHE. Unit: uncore_sbox]
+  llc_misses.mem_read
+  llc_misses.mem_write
+  dtlb_load_misses.miss_causes_a_walk
+       [Load misses in all DTLB levels that cause page walks. Unit: cpu]
+  dtlb_load_misses.pde_cache_miss
+       [DTLB demand load misses with low part of linear-to-physical address
+  dtlb_load_misses.stlb_hit
+       [Load operations that miss the first DTLB level but hit the second and
+  dtlb_load_misses.stlb_hit_2m
+       [Load misses that miss the DTLB and hit the STLB (2M). Unit: cpu]
+  dtlb_load_misses.stlb_hit_4k
+       [Load misses that miss the DTLB and hit the STLB (4K). Unit: cpu]
+  dtlb_load_misses.walk_completed
+       [Demand load Miss in all translation lookaside buffer (TLB) levels
+  dtlb_load_misses.walk_completed_1g
+       [Load miss in all TLB levels causes a page walk that completes. (1G).
+  dtlb_load_misses.walk_completed_2m_4m
+       [Demand load Miss in all translation lookaside buffer (TLB) levels
+  dtlb_load_misses.walk_completed_4k
+       [Demand load Miss in all translation lookaside buffer (TLB) levels
+  dtlb_load_misses.walk_duration
+  dtlb_store_misses.miss_causes_a_walk
+       [Store misses in all DTLB levels that cause page walks. Unit: cpu]
+  dtlb_store_misses.pde_cache_miss
+       [DTLB store misses with low part of linear-to-physical address
+  dtlb_store_misses.stlb_hit
+       [Store operations that miss the first TLB level but hit the second and
+  dtlb_store_misses.stlb_hit_2m
+       [Store misses that miss the DTLB and hit the STLB (2M). Unit: cpu]
+  dtlb_store_misses.stlb_hit_4k
+       [Store misses that miss the DTLB and hit the STLB (4K). Unit: cpu]
+  dtlb_store_misses.walk_completed
+       [Store misses in all DTLB levels that cause completed page walks. Unit:
+  dtlb_store_misses.walk_completed_1g
+       [Store misses in all DTLB levels that cause completed page walks. (1G).
+  dtlb_store_misses.walk_completed_2m_4m
+       [Store misses in all DTLB levels that cause completed page walks
+  dtlb_store_misses.walk_completed_4k
+       [Store miss in all TLB levels causes a page walk that completes. (4K).
+  dtlb_store_misses.walk_duration
+  itlb.itlb_flush
+       [Flushing of the Instruction TLB (ITLB) pages,includes 4k/2M/4M pages.
+  itlb_misses.miss_causes_a_walk
+       [Misses at all ITLB levels that cause page walks. Unit: cpu]
+  itlb_misses.stlb_hit
+       [Operations that miss the first ITLB level but hit the second and do
+  itlb_misses.stlb_hit_2m
+       [Code misses that miss the DTLB and hit the STLB (2M). Unit: cpu]
+  itlb_misses.stlb_hit_4k
+       [Core misses that miss the DTLB and hit the STLB (4K). Unit: cpu]
+  itlb_misses.walk_completed
+       [Misses in all ITLB levels that cause completed page walks. Unit: cpu]
+  itlb_misses.walk_completed_1g
+       [Store miss in all TLB levels causes a page walk that completes. (1G).
+  itlb_misses.walk_completed_2m_4m
+       [Code miss in all TLB levels causes a page walk that completes.
+  itlb_misses.walk_completed_4k
+       [Code miss in all TLB levels causes a page walk that completes. (4K).
+  itlb_misses.walk_duration
+  page_walker_loads.dtlb_l1
+       [Number of DTLB page walker hits in the L1+FB. Unit: cpu]
+  page_walker_loads.dtlb_l2
+       [Number of DTLB page walker hits in the L2. Unit: cpu]
+  page_walker_loads.dtlb_l3
+       [Number of DTLB page walker hits in the L3 + XSNP Spec update: HSD25.
+  page_walker_loads.dtlb_memory
+       [Number of DTLB page walker hits in Memory Spec update: HSD25. Unit:
+  page_walker_loads.ept_dtlb_l1
+       [Counts the number of Extended Page Table walks from the DTLB that hit
+        in the L1 and FB. Unit: cpu]
+  page_walker_loads.ept_dtlb_l2
+       [Counts the number of Extended Page Table walks from the DTLB that hit
+        in the L2. Unit: cpu]
+  page_walker_loads.ept_dtlb_l3
+       [Counts the number of Extended Page Table walks from the DTLB that hit
+        in the L3. Unit: cpu]
+  page_walker_loads.ept_dtlb_memory
+       [Counts the number of Extended Page Table walks from the DTLB that hit
+  page_walker_loads.ept_itlb_l1
+       [Counts the number of Extended Page Table walks from the ITLB that hit
+        in the L1 and FB. Unit: cpu]
+  page_walker_loads.ept_itlb_l2
+       [Counts the number of Extended Page Table walks from the ITLB that hit
+        in the L2. Unit: cpu]
+  page_walker_loads.ept_itlb_l3
+       [Counts the number of Extended Page Table walks from the ITLB that hit
+        in the L2. Unit: cpu]
+  page_walker_loads.ept_itlb_memory
+       [Counts the number of Extended Page Table walks from the ITLB that hit
+  page_walker_loads.itlb_l1
+       [Number of ITLB page walker hits in the L1+FB. Unit: cpu]
+  page_walker_loads.itlb_l2
+       [Number of ITLB page walker hits in the L2. Unit: cpu]
+  page_walker_loads.itlb_l3
+       [Number of ITLB page walker hits in the L3 + XSNP Spec update: HSD25.
+  page_walker_loads.itlb_memory
+       [Number of ITLB page walker hits in Memory Spec update: HSD25. Unit:
+  tlb_flush.dtlb_thread
+       [DTLB flush attempts of the thread-specific entries. Unit: cpu]
+  tlb_flush.stlb_any
+       [STLB flush attempts. Unit: cpu]
+  tma_info_memory_l2mpki
+       [L2 cache true misses per kilo instruction for retired demand loads]
+  tma_icache_misses
+        instruction cache misses]
+  tma_itlb_misses
+        Instruction TLB (ITLB) misses]
+  tma_icache_misses
+        instruction cache misses]
+  tma_itlb_misses
+        Instruction TLB (ITLB) misses]
+       [This metric does a *rough estimation* of how often L1D Fill Buffer
+        unavailability limited additional L1D miss memory access requests to
+  tma_l2_bound
+       [This metric estimates how often the CPU was stalled due to L2 cache
+  tma_l3_hit_latency
+        that hit the L3 cache under unloaded scenarios (possibly L3 latency
+       [This metric estimates fraction of cycles the CPU spent handling L1D
+  tma_dtlb_load
+        TLB (DTLB) was missed by load accesses]
+  tma_dtlb_store
+        first-level data TLB store misses]
+CacheHits: [Grouping from Top-down Microarchitecture Analysis Metrics spreadsheet]
+  tma_info_memory_l1mpki
+       [L1 cache true misses per kilo instruction for retired demand loads]
+  tma_info_memory_l2mpki
+       [L2 cache true misses per kilo instruction for retired demand loads]
+  tma_l1_bound
+        missing the L1 Data (L1D) cache]
+  tma_l2_bound
+       [This metric estimates how often the CPU was stalled due to L2 cache
+  tma_l3_bound
+        accesses to L3 cache or contended with a sibling Core]
+CacheMisses: [Grouping from Top-down Microarchitecture Analysis Metrics spreadsheet]
+  tma_info_memory_l2mpki_rfo
+       [Offcore requests (L2 cache miss) per kilo instruction for demand RFOs]
+        limited due to DSB (decoded uop cache) fetch pipeline]
+       [Fraction of Uops delivered by the DSB (aka Decoded ICache; or Uop
+        Cache)]
+       [Fraction of Uops delivered by the DSB (aka Decoded ICache; or Uop
+        Cache)]
+        limited due to DSB (decoded uop cache) fetch pipeline]
+       [Fraction of Uops delivered by the DSB (aka Decoded ICache; or Uop
+        Cache)]
+  tma_icache_misses
+        instruction cache misses]
+  tma_itlb_misses
+        Instruction TLB (ITLB) misses]
+  tma_icache_misses
+        instruction cache misses]
+  tma_info_memory_latency_load_l2_miss_latency
+       [Average Latency for L2 cache miss demand Loads]
+       [This metric represents fraction of cycles the CPU spent handling cache
+       [This metric estimates fraction of cycles the CPU spent handling L1D
+  tma_info_memory_core_l1d_cache_fill_bw_2t
+       [Average per-core data fill bandwidth to the L1 data cache [GB / sec]]
+  tma_info_memory_core_l2_cache_fill_bw_2t
+       [Average per-core data fill bandwidth to the L2 cache [GB / sec]]
+  tma_info_memory_core_l3_cache_fill_bw_2t
+       [Average per-core data fill bandwidth to the L3 cache [GB / sec]]
+  tma_info_memory_l1d_cache_fill_bw
+       [Average per-thread data fill bandwidth to the L1 data cache [GB / sec]]
+  tma_info_memory_l1mpki
+       [L1 cache true misses per kilo instruction for retired demand loads]
+  tma_info_memory_l2_cache_fill_bw
+       [Average per-thread data fill bandwidth to the L2 cache [GB / sec]]
+  tma_info_memory_l2mpki
+       [L2 cache true misses per kilo instruction for retired demand loads]
+  tma_info_memory_l3_cache_fill_bw
+       [Average per-thread data fill bandwidth to the L3 cache [GB / sec]]
+  tma_info_memory_l3mpki
+       [L3 cache true misses per kilo instruction for retired demand loads]
+       [Actual Average Latency for L1 data-cache miss demand load operations
+       [Memory-Level-Parallelism (average number of L1 miss demand load when
+  tma_info_memory_tlb_page_walks_utilization
+       [Utilization of the core's Page Walker(s) serving STLB misses triggered
+       [This metric does a *rough estimation* of how often L1D Fill Buffer
+        unavailability limited additional L1D miss memory access requests to
+  tma_info_memory_core_l1d_cache_fill_bw_2t
+       [Average per-core data fill bandwidth to the L1 data cache [GB / sec]]
+  tma_info_memory_core_l2_cache_fill_bw_2t
+       [Average per-core data fill bandwidth to the L2 cache [GB / sec]]
+  tma_info_memory_core_l3_cache_fill_bw_2t
+       [Average per-core data fill bandwidth to the L3 cache [GB / sec]]
+  tma_info_memory_l1d_cache_fill_bw
+       [Average per-thread data fill bandwidth to the L1 data cache [GB / sec]]
+  tma_info_memory_l2_cache_fill_bw
+       [Average per-thread data fill bandwidth to the L2 cache [GB / sec]]
+  tma_info_memory_l3_cache_fill_bw
+       [Average per-thread data fill bandwidth to the L3 cache [GB / sec]]
+       [Memory-Level-Parallelism (average number of L1 miss demand load when
+       [Actual Average Latency for L1 data-cache miss demand load operations
+       [Memory-Level-Parallelism (average number of L1 miss demand load when
+  tma_l1_bound
+        missing the L1 Data (L1D) cache]
+  tma_l2_bound
+       [This metric estimates how often the CPU was stalled due to L2 cache
+  tma_l3_bound
+        accesses to L3 cache or contended with a sibling Core]
+       [Actual Average Latency for L1 data-cache miss demand load operations
+  tma_l3_hit_latency
+        that hit the L3 cache under unloaded scenarios (possibly L3 latency
+       [This metric estimates fraction of cycles the CPU spent handling L1D
+MemoryTLB: [Grouping from Top-down Microarchitecture Analysis Metrics spreadsheet]
+  tma_dtlb_load
+        TLB (DTLB) was missed by load accesses]
+  tma_dtlb_store
+        first-level data TLB store misses]
+  tma_info_memory_tlb_page_walks_utilization
+       [Utilization of the core's Page Walker(s) serving STLB misses triggered
+  tma_itlb_misses
+        Instruction TLB (ITLB) misses]
+  tma_info_memory_latency_data_l2_mlp
+       [Average Parallel L2 cache miss data reads]
+  tma_info_memory_latency_load_l2_mlp
+       [Average Parallel L2 cache miss demand Loads]
+  tma_info_memory_latency_load_l2_miss_latency
+       [Average Latency for L2 cache miss demand Loads]
+  tma_info_memory_l2mpki_rfo
+       [Offcore requests (L2 cache miss) per kilo instruction for demand RFOs]
+  tma_info_memory_latency_data_l2_mlp
+       [Average Parallel L2 cache miss data reads]
+  tma_info_memory_latency_load_l2_miss_latency
+       [Average Latency for L2 cache miss demand Loads]
+  tma_info_memory_latency_load_l2_mlp
+       [Average Parallel L2 cache miss demand Loads]
+       [This metric represents fraction of cycles the CPU spent handling cache
+  tma_remote_cache
+        was handling loads from remote cache in other sockets including
+       [This metric estimates fraction of cycles the CPU spent handling L1D
+  tma_remote_cache
+        was handling loads from remote cache in other sockets including
+  tma_remote_cache
+        was handling loads from remote cache in other sockets including
+TmaL1: [Grouping from Top-down Microarchitecture Analysis Metrics spreadsheet]
+TmaL2: [Grouping from Top-down Microarchitecture Analysis Metrics spreadsheet]
+TmaL3mem: [Grouping from Top-down Microarchitecture Analysis Metrics spreadsheet]
+  tma_l1_bound
+        missing the L1 Data (L1D) cache]
+  tma_l2_bound
+       [This metric estimates how often the CPU was stalled due to L2 cache
+  tma_l3_bound
+        accesses to L3 cache or contended with a sibling Core]
+TopdownL1: [Metrics for top-down breakdown at level 1]
+TopdownL2: [Metrics for top-down breakdown at level 2]
+TopdownL3: [Metrics for top-down breakdown at level 3]
+        limited due to DSB (decoded uop cache) fetch pipeline]
+  tma_icache_misses
+        instruction cache misses]
+  tma_itlb_misses
+        Instruction TLB (ITLB) misses]
+  tma_l1_bound
+        missing the L1 Data (L1D) cache]
+  tma_l2_bound
+       [This metric estimates how often the CPU was stalled due to L2 cache
+  tma_l3_bound
+        accesses to L3 cache or contended with a sibling Core]
+  tma_dtlb_load
+        TLB (DTLB) was missed by load accesses]
+  tma_dtlb_store
+        first-level data TLB store misses]
+       [This metric does a *rough estimation* of how often L1D Fill Buffer
+        unavailability limited additional L1D miss memory access requests to
+  tma_l3_hit_latency
+        that hit the L3 cache under unloaded scenarios (possibly L3 latency
+       [This metric represents fraction of cycles the CPU spent handling cache
+        accesses - load that cross 64-byte cache line boundary]
+       [This metric estimates fraction of cycles the CPU spent handling L1D
+  tma_remote_cache
+        was handling loads from remote cache in other sockets including
+dtlb_load_mpi:
+  dtlb_load_mpi
+dtlb_store_mpi:
+  dtlb_store_mpi
+itlb_large_page_mpi:
+  itlb_large_page_mpi
+itlb_mpi:
+  itlb_mpi
+l1_i_code_read_misses_with_prefetches_per_instr:
+  l1_i_code_read_misses_with_prefetches_per_instr
+       [Ratio of number of code read requests missing in L1 instruction cache
+l1d_demand_data_read_hits_per_instr:
+  l1d_demand_data_read_hits_per_instr
+       [Ratio of number of demand load requests hitting in L1 data cache to
+l1d_mpi:
+  l1d_mpi
+       [Ratio of number of requests missing L1 data cache (includes data+rfo
+l2_demand_code_mpi:
+  l2_demand_code_mpi
+       [Ratio of number of code read request missing L2 cache to the total
+l2_demand_data_read_hits_per_instr:
+  l2_demand_data_read_hits_per_instr
+       [Ratio of number of completed demand load requests hitting in L2 cache
+l2_demand_data_read_mpi:
+  l2_demand_data_read_mpi
+       [Ratio of number of completed data read request missing L2 cache to the
+l2_mpi:
+  l2_mpi
+       [Ratio of number of requests missing L2 cache (includes code+data+rfo
+llc_code_read_mpi_demand_plus_prefetch:
+  llc_code_read_mpi_demand_plus_prefetch
+       [Ratio of number of code read requests missing last level core cache
+llc_data_read_demand_plus_prefetch_miss_latency:
+  llc_data_read_demand_plus_prefetch_miss_latency
+       [Average latency of a last level cache (LLC) demand and prefetch data
+llc_data_read_demand_plus_prefetch_miss_latency_for_local_requests:
+  llc_data_read_demand_plus_prefetch_miss_latency_for_local_requests
+       [Average latency of a last level cache (LLC) demand and prefetch data
+llc_data_read_demand_plus_prefetch_miss_latency_for_remote_requests:
+  llc_data_read_demand_plus_prefetch_miss_latency_for_remote_requests
+       [Average latency of a last level cache (LLC) demand and prefetch data
+llc_data_read_mpi_demand_plus_prefetch:
+  llc_data_read_mpi_demand_plus_prefetch
+       [Ratio of number of data read requests missing last level core cache
+       [Memory read that miss the last level cache (LLC) addressed to local
+        LLC prefetches]
+       [Memory reads that miss the last level cache (LLC) addressed to remote
+        LLC prefetches]
+percent_uops_delivered_from_decoded_icache:
+  percent_uops_delivered_from_decoded_icache
+       [Uops delivered from decoded instruction cache (decoded stream buffer
+tma_L1_group: [Metrics for top-down breakdown at level 1]
+tma_L2_group: [Metrics for top-down breakdown at level 2]
+tma_L3_group: [Metrics for top-down breakdown at level 3]
+        limited due to DSB (decoded uop cache) fetch pipeline]
+  tma_icache_misses
+        instruction cache misses]
+  tma_itlb_misses
+        Instruction TLB (ITLB) misses]
+  tma_l1_bound
+        missing the L1 Data (L1D) cache]
+  tma_l2_bound
+       [This metric estimates how often the CPU was stalled due to L2 cache
+  tma_l3_bound
+        accesses to L3 cache or contended with a sibling Core]
+  tma_dtlb_load
+        TLB (DTLB) was missed by load accesses]
+  tma_dtlb_store
+        first-level data TLB store misses]
+       [This metric does a *rough estimation* of how often L1D Fill Buffer
+        unavailability limited additional L1D miss memory access requests to
+  tma_l3_hit_latency
+        that hit the L3 cache under unloaded scenarios (possibly L3 latency
+       [This metric represents fraction of cycles the CPU spent handling cache
+        accesses - load that cross 64-byte cache line boundary]
+       [This metric estimates fraction of cycles the CPU spent handling L1D
+  tma_remote_cache
+        was handling loads from remote cache in other sockets including
+        limited due to DSB (decoded uop cache) fetch pipeline]
+  tma_icache_misses
+        instruction cache misses]
+  tma_itlb_misses
+        Instruction TLB (ITLB) misses]
+       [This metric does a *rough estimation* of how often L1D Fill Buffer
+        unavailability limited additional L1D miss memory access requests to
+       [Fraction of Uops delivered by the DSB (aka Decoded ICache; or Uop
+        Cache)]
+tma_issueL1: [Metrics related by the issue $issueL1]
+  tma_l1_bound
+        missing the L1 Data (L1D) cache]
+  tma_l3_hit_latency
+        that hit the L3 cache under unloaded scenarios (possibly L3 latency
+  tma_l1_bound
+        missing the L1 Data (L1D) cache]
+       [This metric represents fraction of cycles the CPU spent handling cache
+       [This metric estimates fraction of cycles the CPU spent handling L1D
+       [This metric does a *rough estimation* of how often L1D Fill Buffer
+        unavailability limited additional L1D miss memory access requests to
+       [This metric estimates fraction of cycles the CPU spent handling L1D
+       [This metric does a *rough estimation* of how often L1D Fill Buffer
+        unavailability limited additional L1D miss memory access requests to
+  tma_remote_cache
+        was handling loads from remote cache in other sockets including
+tma_issueTLB: [Metrics related by the issue $issueTLB]
+  tma_dtlb_load
+        TLB (DTLB) was missed by load accesses]
+  tma_dtlb_store
+        first-level data TLB store misses]
+tma_l1_bound_group: [Metrics contributing to tma_l1_bound category]
+  tma_dtlb_load
+        TLB (DTLB) was missed by load accesses]
+       [This metric does a *rough estimation* of how often L1D Fill Buffer
+        unavailability limited additional L1D miss memory access requests to
+       [This metric represents fraction of cycles the CPU spent handling cache
+        accesses - load that cross 64-byte cache line boundary]
+tma_l3_bound_group: [Metrics contributing to tma_l3_bound category]
+  tma_l3_hit_latency
+        that hit the L3 cache under unloaded scenarios (possibly L3 latency
+  tma_remote_cache
+        was handling loads from remote cache in other sockets including
+  tma_l1_bound
+        missing the L1 Data (L1D) cache]
+  tma_l2_bound
+       [This metric estimates how often the CPU was stalled due to L2 cache
+  tma_l3_bound
+        accesses to L3 cache or contended with a sibling Core]
+  tma_dtlb_store
+        first-level data TLB store misses]
+       [This metric estimates fraction of cycles the CPU spent handling L1D
