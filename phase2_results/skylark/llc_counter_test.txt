@@ -1,0 +1,12 @@
+pmu_group_add: failed to open 'll_loads' (type=3 config=0x2): No such file or directory
+pmu_group_add: failed to open 'll_misses' (type=3 config=0x10002): No such file or directory
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,16777216,0,0,1000000,357930855.0,40269346,7000056,1968738,986695,6055149,1013898,-1,-1,-1,-1,0,0.501181,0.167444,-1.000000
+
+ Performance counter stats for 'system wide':
+
+   <not supported>      amd_l3/l3_accesses/u                                                  
+   <not supported>      amd_l3/l3_misses/u                                                    
+
+       0.478680886 seconds time elapsed
+
