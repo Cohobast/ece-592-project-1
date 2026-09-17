@@ -1,0 +1,128 @@
+===== SIZE 1048576 =====
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,1048576,0,0,1000000,77400951.0,20077831,7000053,11,0,5000023,959539,18,0,959539,11,0,0.000000,0.191907,0.000000
+
+ Performance counter stats for './phase2_verify capacity 1048576 1000000':
+
+         7,547,865      l2_rqsts.demand_data_rd_hit                                           
+            59,615      l2_rqsts.demand_data_rd_miss                                          
+
+       0.081662413 seconds time elapsed
+
+       0.082607000 seconds user
+       0.002014000 seconds sys
+
+
+
+===== SIZE 1310720 =====
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,1310720,0,0,1000000,86706507.0,21049839,7000053,8,0,5000024,967435,5,0,966697,943,0,0.000000,0.193486,0.000000
+
+ Performance counter stats for './phase2_verify capacity 1310720 1000000':
+
+         8,268,050      l2_rqsts.demand_data_rd_hit                                           
+           106,276      l2_rqsts.demand_data_rd_miss                                          
+
+       0.091289083 seconds time elapsed
+
+       0.091070000 seconds user
+       0.004003000 seconds sys
+
+
+
+===== SIZE 1572864 =====
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,1572864,0,0,1000000,116336073.0,25724254,7000056,95391,0,5000027,972945,101266,4,877563,95347,0,0.000000,0.194588,0.000039
+
+ Performance counter stats for './phase2_verify capacity 1572864 1000000':
+
+         8,135,409      l2_rqsts.demand_data_rd_hit                                           
+         1,002,805      l2_rqsts.demand_data_rd_miss                                          
+
+       0.126553388 seconds time elapsed
+
+       0.122383000 seconds user
+       0.004012000 seconds sys
+
+
+
+===== SIZE 1835008 =====
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,1835008,0,0,1000000,115939820.0,23901121,7000055,51121,3,5000025,977353,52172,5,926991,50415,0,0.000059,0.195470,0.000096
+
+ Performance counter stats for './phase2_verify capacity 1835008 1000000':
+
+         9,179,297      l2_rqsts.demand_data_rd_hit                                           
+           711,437      l2_rqsts.demand_data_rd_miss                                          
+
+       0.124485184 seconds time elapsed
+
+       0.124839000 seconds user
+       0.002996000 seconds sys
+
+
+
+===== SIZE 2097152 =====
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,2097152,0,0,1000000,150854031.0,29224345,7000057,155715,10,5000027,979854,155316,3,824206,155631,0,0.000064,0.195970,0.000019
+
+ Performance counter stats for './phase2_verify capacity 2097152 1000000':
+
+         8,785,814      l2_rqsts.demand_data_rd_hit                                           
+         1,854,438      l2_rqsts.demand_data_rd_miss                                          
+
+       0.165273202 seconds time elapsed
+
+       0.159255000 seconds user
+       0.006009000 seconds sys
+
+
+
+===== SIZE 2621440 =====
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,2621440,0,0,1000000,201510461.0,34434740,7000060,258615,12,5000031,983868,260623,8,725581,258264,0,0.000046,0.196772,0.000031
+
+ Performance counter stats for './phase2_verify capacity 2621440 1000000':
+
+         8,785,595      l2_rqsts.demand_data_rd_hit                                           
+         3,341,234      l2_rqsts.demand_data_rd_miss                                          
+
+       0.215447149 seconds time elapsed
+
+       0.209949000 seconds user
+       0.008997000 seconds sys
+
+
+
+===== SIZE 3145728 =====
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,3145728,0,0,1000000,266100139.0,40928247,7000063,388277,19,5000034,986604,388116,6,596850,389783,0,0.000049,0.197319,0.000015
+
+ Performance counter stats for './phase2_verify capacity 3145728 1000000':
+
+         8,148,647      l2_rqsts.demand_data_rd_hit                                           
+         5,459,013      l2_rqsts.demand_data_rd_miss                                          
+
+       0.281699474 seconds time elapsed
+
+       0.280346000 seconds user
+       0.005006000 seconds sys
+
+
+
+===== SIZE 4194304 =====
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,4194304,0,0,1000000,461105170.0,56897140,7000072,698800,33,5000041,1012575,776967,35,257314,770244,0,0.000047,0.202513,0.000045
+
+ Performance counter stats for './phase2_verify capacity 4194304 1000000':
+
+         4,822,662      l2_rqsts.demand_data_rd_hit                                           
+        12,322,024      l2_rqsts.demand_data_rd_miss                                          
+
+       0.485282394 seconds time elapsed
+
+       0.480473000 seconds user
+       0.007991000 seconds sys
+
+
+
