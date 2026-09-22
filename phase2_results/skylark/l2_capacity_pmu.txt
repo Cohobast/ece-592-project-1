@@ -1,0 +1,162 @@
+===== SIZE 262144 =====
+pmu_group_add: failed to open 'll_loads' (type=3 config=0x2): No such file or directory
+pmu_group_add: failed to open 'll_misses' (type=3 config=0x10002): No such file or directory
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,262144,0,0,1000000,16979124.0,16184580,7000048,1688420,1451,6000539,893082,-1,-1,-1,-1,0,0.000859,0.148834,-1.000000
+
+ Performance counter stats for './phase2_verify capacity 262144 1000000':
+
+         3,140,665      l2_cache_accesses_from_dc_misses:u                                      
+            28,129      l2_cache_misses_from_dc_misses:u                                      
+
+       0.018495199 seconds time elapsed
+
+       0.018463000 seconds user
+       0.000000000 seconds sys
+
+
+
+===== SIZE 393216 =====
+pmu_group_add: failed to open 'll_loads' (type=3 config=0x2): No such file or directory
+pmu_group_add: failed to open 'll_misses' (type=3 config=0x10002): No such file or directory
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,393216,0,0,1000000,21500217.0,19527239,7000049,2206894,131634,6000653,1313372,-1,-1,-1,-1,0,0.059647,0.218872,-1.000000
+
+ Performance counter stats for './phase2_verify capacity 393216 1000000':
+
+         4,877,548      l2_cache_accesses_from_dc_misses:u                                      
+           540,974      l2_cache_misses_from_dc_misses:u                                      
+
+       0.023495395 seconds time elapsed
+
+       0.022374000 seconds user
+       0.000999000 seconds sys
+
+
+
+===== SIZE 524288 =====
+pmu_group_add: failed to open 'll_loads' (type=3 config=0x2): No such file or directory
+pmu_group_add: failed to open 'll_misses' (type=3 config=0x10002): No such file or directory
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,524288,0,0,1000000,26981629.0,22862995,7000050,1158205,208457,6033032,946301,-1,-1,-1,-1,0,0.179983,0.156853,-1.000000
+
+ Performance counter stats for './phase2_verify capacity 524288 1000000':
+
+         3,885,705      l2_cache_accesses_from_dc_misses:u                                      
+           907,445      l2_cache_misses_from_dc_misses:u                                      
+
+       0.029379237 seconds time elapsed
+
+       0.027224000 seconds user
+       0.002001000 seconds sys
+
+
+
+===== SIZE 655360 =====
+pmu_group_add: failed to open 'll_loads' (type=3 config=0x2): No such file or directory
+pmu_group_add: failed to open 'll_misses' (type=3 config=0x10002): No such file or directory
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,655360,0,0,1000000,30753968.0,24923397,7000051,1535994,349018,6003640,1223161,-1,-1,-1,-1,0,0.227226,0.203737,-1.000000
+
+ Performance counter stats for './phase2_verify capacity 655360 1000000':
+
+         5,140,975      l2_cache_accesses_from_dc_misses:u                                      
+         1,544,073      l2_cache_misses_from_dc_misses:u                                      
+
+       0.033648872 seconds time elapsed
+
+       0.032517000 seconds user
+       0.000971000 seconds sys
+
+
+
+===== SIZE 786432 =====
+pmu_group_add: failed to open 'll_loads' (type=3 config=0x2): No such file or directory
+pmu_group_add: failed to open 'll_misses' (type=3 config=0x10002): No such file or directory
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,786432,0,0,1000000,35919172.0,27922185,7000052,1315463,382768,6044292,964352,-1,-1,-1,-1,0,0.290976,0.159548,-1.000000
+
+ Performance counter stats for './phase2_verify capacity 786432 1000000':
+
+         4,334,297      l2_cache_accesses_from_dc_misses:u                                      
+         1,773,338      l2_cache_misses_from_dc_misses:u                                      
+
+       0.039339864 seconds time elapsed
+
+       0.039156000 seconds user
+       0.000000000 seconds sys
+
+
+
+===== SIZE 917504 =====
+pmu_group_add: failed to open 'll_loads' (type=3 config=0x2): No such file or directory
+pmu_group_add: failed to open 'll_misses' (type=3 config=0x10002): No such file or directory
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,917504,0,0,1000000,40356960.0,30053292,7000052,1649823,558826,6018129,1180599,-1,-1,-1,-1,0,0.338719,0.196174,-1.000000
+
+ Performance counter stats for './phase2_verify capacity 917504 1000000':
+
+         5,585,917      l2_cache_accesses_from_dc_misses:u                                      
+         2,677,813      l2_cache_misses_from_dc_misses:u                                      
+
+       0.044268708 seconds time elapsed
+
+       0.043086000 seconds user
+       0.001003000 seconds sys
+
+
+
+===== SIZE 1048576 =====
+pmu_group_add: failed to open 'll_loads' (type=3 config=0x2): No such file or directory
+pmu_group_add: failed to open 'll_misses' (type=3 config=0x10002): No such file or directory
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,1048576,0,0,1000000,44859809.0,31982106,7000053,1475326,534439,6036512,972763,-1,-1,-1,-1,0,0.362251,0.161147,-1.000000
+
+ Performance counter stats for './phase2_verify capacity 1048576 1000000':
+
+         4,904,052      l2_cache_accesses_from_dc_misses:u                                      
+         2,704,970      l2_cache_misses_from_dc_misses:u                                      
+
+       0.049387684 seconds time elapsed
+
+       0.045303000 seconds user
+       0.003911000 seconds sys
+
+
+
+===== SIZE 1310720 =====
+pmu_group_add: failed to open 'll_loads' (type=3 config=0x2): No such file or directory
+pmu_group_add: failed to open 'll_misses' (type=3 config=0x10002): No such file or directory
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,1310720,0,0,1000000,52975499.0,34740863,7000054,1579135,629469,6029525,978572,-1,-1,-1,-1,0,0.398616,0.162297,-1.000000
+
+ Performance counter stats for './phase2_verify capacity 1310720 1000000':
+
+         5,427,222      l2_cache_accesses_from_dc_misses:u                                      
+         3,473,768      l2_cache_misses_from_dc_misses:u                                      
+
+       0.058444559 seconds time elapsed
+
+       0.057202000 seconds user
+       0.001002000 seconds sys
+
+
+
+===== SIZE 1572864 =====
+pmu_group_add: failed to open 'll_loads' (type=3 config=0x2): No such file or directory
+pmu_group_add: failed to open 'll_misses' (type=3 config=0x10002): No such file or directory
+mode,param1,param2,param3,n_samples,elapsed_ns,cycles,instructions,cache_refs,cache_misses,l1d_loads,l1d_misses,ll_loads,ll_misses,raw_l2_1,raw_l2_2,any_group_multiplexed,cache_miss_rate,l1d_miss_rate,ll_miss_rate
+capacity,1572864,0,0,1000000,59774125.0,36428813,7000054,1641519,690669,6051783,982242,-1,-1,-1,-1,0,0.420750,0.162306,-1.000000
+
+ Performance counter stats for './phase2_verify capacity 1572864 1000000':
+
+         5,962,200      l2_cache_accesses_from_dc_misses:u                                      
+         4,159,062      l2_cache_misses_from_dc_misses:u                                      
+
+       0.066390162 seconds time elapsed
+
+       0.064234000 seconds user
+       0.001945000 seconds sys
+
+
+
